@@ -28,4 +28,5 @@ void fog() {
 	}
 	
 	ALBEDO = albedo;
+	EMISSION = emission;
 }
