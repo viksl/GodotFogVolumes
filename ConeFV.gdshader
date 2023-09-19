@@ -24,7 +24,6 @@ void fog() {
 	
 	if (dist < 0.0)
 	{
-		//DENSITY = density;
 		DENSITY = density * clamp(exp2(-height_falloff * object_position.y), 0.0, 1.0);
 		DENSITY *= texture(density_texture, UVW).r;
 		DENSITY *= pow(clamp(-2.0 * dist / min(min(SIZE.x, SIZE.y), SIZE.z), 0.0, 1.0), edge_fade);
